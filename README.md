@@ -1,8 +1,27 @@
-# Welcome to your Lovable project
+# Call Blocker Android App
+
+A professional Android application for blocking unwanted calls by phone number prefix. Built with React, TypeScript, and Capacitor for native mobile functionality.
 
 ## Project info
 
 **URL**: https://lovable.dev/projects/3f26f167-4656-48df-b4d2-0a584ddfd70a
+
+## Features
+
+- ✅ Block calls by number prefix (e.g., "+330162", "555")
+- ✅ Professional, Material Design-inspired interface
+- ✅ Real-time call blocking status
+- ✅ Track blocked calls count
+- ✅ Easy management of blocked numbers
+- ✅ Native Android integration with Capacitor
+- ✅ Responsive design for all screen sizes
+
+## Demo Numbers
+
+The app comes with demo blocked numbers:
+- `+330162` - French number prefix
+- `555` - Common spam prefix
+- `+1800` - Toll-free numbers
 
 ## How can I edit this code?
 
@@ -60,7 +79,41 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## 📱 Building for Android
+
+To build and test this app on Android:
+
+1. **Export to GitHub**: Use the "Export to GitHub" button in Lovable
+2. **Clone and setup**:
+   ```bash
+   git clone <your-repo-url>
+   cd <your-project-name>
+   npm install
+   ```
+3. **Add Android platform**:
+   ```bash
+   npx cap add android
+   ```
+4. **Build and sync**:
+   ```bash
+   npm run build
+   npx cap sync
+   ```
+5. **Run on device/emulator**:
+   ```bash
+   npx cap run android
+   ```
+
+## 🔧 Native Android Features
+
+When built as native Android app, this includes:
+
+- **Call Screening Service**: Intercepts incoming calls
+- **Phone State Permissions**: Monitors call status
+- **Background Service**: Runs continuously to block calls
+- **System Integration**: Works with Android's native call system
+
+## 🚀 How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/3f26f167-4656-48df-b4d2-0a584ddfd70a) and click on Share -> Publish.
 
